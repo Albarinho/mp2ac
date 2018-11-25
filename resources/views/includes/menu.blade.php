@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="active nav-item "><a class="nav-link" href="{{route('index')}}">Home</a></li>
-
+            <li class="active nav-item "><a class="nav-link" href="{{route('about')}}">About </a></li>
             <li class="active nav-item "><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
         </ul>
 
