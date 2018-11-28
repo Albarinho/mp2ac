@@ -47,7 +47,14 @@ class CarsTest extends TestCase
         $this->assertInternalType('int',$carsCount);
         //dd($carsCount);
     }
+    public function testCarYearDataType()
+    {
+        $car = Car::inRandomOrder() ->first();
+        //dd($year);
+        $year = (int) $car->Year;
+        $this->assertInternalType('int',$year);
 
+    }
 
 
 }
