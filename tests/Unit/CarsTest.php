@@ -23,5 +23,13 @@ class CarsTest extends TestCase
         $this->assertTrue($car->save());
         $this->assertInternalType('int',$car->year);
     }
+    public function testUpdateCarYear()
+    {
+        $car = Car::all()->last();
+        $car-> where('id', '51')-> update(['year' => 2000]);
+        $this->assertTrue($car->save());
+        //dd($car);
+
+    }
 
 }
